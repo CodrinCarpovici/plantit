@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
+import './index.scss'
 
 function App() {
 
   return (
     <>
+    <h1>Hello</h1>
     </>
   )
 }
