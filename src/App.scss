@@ -52,6 +52,7 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 /* FOOTER */
 #footer {
   background-color: $primary-black;
+  box-shadow: $card-shadow;
 
   .main-logo {
     max-width: 40px;
