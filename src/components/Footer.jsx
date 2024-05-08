@@ -11,18 +11,20 @@ const Footer = () => {
         <div className="container-fluid text-center">
           <div className="row">
             <div className="col">
-              <a href="#">
-                <motion.img
-                  whileHover={{
-                    delay: 0,
-                    scale: 1.1,
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  src={mainLogo}
-                  alt="main logo"
-                  className="main-logo"
-                />
-              </a>
+              <div className="d-flex">
+                <a href="#">
+                  <motion.img
+                    whileHover={{
+                      delay: 0,
+                      scale: 1.1,
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    src={mainLogo}
+                    alt="main logo"
+                    className="main-logo"
+                  />
+                </a>
+              </div>
             </div>
             <div className="col d-flex align-items-center justify-content-center">
               <a href="">
