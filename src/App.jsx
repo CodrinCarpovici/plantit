@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.scss'
 import './index.scss'
+
 import Navbar from './components/Navbar'
 // import MyPlans from './pages/Plantpage'
 // import Calendar from './pages/Calendarpage'
@@ -12,11 +13,17 @@ import Navbar from './components/Navbar'
 // // import SignIn from './pages/'
 // // import Recognition from './pages/'
 
+import Footer from './components/Footer'
+
 function App() {
 
   return (
     <>
+navbar
     <Navbar/>
+    <h1>Hello</h1>
+    <Footer></Footer>
+ main
     </>
   )
 }

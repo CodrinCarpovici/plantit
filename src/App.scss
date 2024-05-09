@@ -29,16 +29,16 @@ $paragraph-text-highlight-fw: medium;
 
 //COLORS
 $primary-black: #323232;
-$primary-dark-green : #295f4e;
+$primary-dark-green: #295f4e;
 $primary-light-green: #569033;
 $primary-warm: #a8896c;
-$priamry-cold: #39627F;
+$priamry-cold: #39627f;
 
-$secondary-grey: #B4B4B4;
+$secondary-grey: #b4b4b4;
 $secondary-dark-green: #6db193;
-$secondary-light-green: #96CF73;
-$secondary-warm: #96CF73;
-$secondary-cold: #6DB6EA;
+$secondary-light-green: #96cf73;
+$secondary-warm: #96cf73;
+$secondary-cold: #6db6ea;
 
 //ROUNDED
 $r16: 16px;
@@ -48,6 +48,7 @@ $r8: 8px;
 $button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 $card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
 
 
 /* NAVBAR */
@@ -82,5 +83,34 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   .main-logo {
     width: 45px;
     height: auto;
+
+/* FOOTER */
+#footer {
+  background-color: $primary-black;
+  box-shadow: $card-shadow;
+
+  .main-logo {
+    max-width: 40px;
+  }
+
+  .social-link {
+    box-shadow: $img-shadow;
+  }
+
+  .social-link-logo {
+    max-width: 40px;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: $primary-light-green;
+    text-shadow: $button-shadow;
+  }
+
+  .footer-link:hover {
+    color: $secondary-light-green;
+
   }
 }
