@@ -1,13 +1,23 @@
 import React from "react";
 import logo from "../assets/main-logo-text-icon.png";
+import { motion } from "framer-motion";
+
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="navbar-brand">
-          <a href="/">
-            <img src={logo} alt="PlantIT logo" className="main-logo" />
+        <a href="/">
+            <motion.img
+              whileHover={{
+                scale: 1.1,
+              }}
+              whileTap={{ scale: 0.95 }}
+              src={logo}
+              alt="PlantIT logo"
+              className="main-logo"
+            />
           </a>
         </div>
         <button
@@ -23,46 +33,46 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+          <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/">
                 Home
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/myplans">
                 My Plans
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/calendar">
                 Calendar
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/recognition">
                 Recognition
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/news">
                 News
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/forum">
                 Forum
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/contact">
                 Contact
               </a>
-            </li>
-            <li className="nav-item">
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="nav-item">
               <a className="nav-link" href="/signin">
                 Sign In
               </a>
-            </li>
+              </motion.li>
           </ul>
         </div>
       </div>
