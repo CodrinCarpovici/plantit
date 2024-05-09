@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
+      <div className="container">
         <div className="navbar-brand">
         <a href="/">
             <motion.img
