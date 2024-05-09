@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.scss'
 import './index.scss'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 // import MyPlans from './pages/Plantpage'
 // import Calendar from './pages/Calendarpage'
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+    <h1>Hello</h1>
     </>
   )
 }
