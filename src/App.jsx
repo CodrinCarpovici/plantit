@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './App.scss'
-import './index.scss'
+import "./App.scss";
+import "./index.scss";
 
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 
-import Navbar from './components/Navbar'
+import Navbar from "./components/Navbar";
 // import MyPlans from './pages/Plantpage'
 // import Calendar from './pages/Calendarpage'
 // import News from './pages/Newspage'
@@ -15,20 +15,17 @@ import Navbar from './components/Navbar'
 // // import SignIn from './pages/'
 // // import Recognition from './pages/'
 
-
 function App() {
-
   return (
     <>
-    <Navbar/>
-    <h1>Hello</h1>
-    <Footer></Footer>
+      <Navbar />
+      <h1>Hello</h1>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
 
 // {/* <Router>
 //       <Navbar />
