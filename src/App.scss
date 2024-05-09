@@ -49,35 +49,6 @@ $button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 $card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
-/* FOOTER */
-#footer {
-  background-color: $primary-black;
-  box-shadow: $card-shadow;
-
-  .main-logo {
-    max-width: 40px;
-  }
-
-  .social-link {
-    box-shadow: $img-shadow;
-  }
-
-  .social-link-logo {
-    max-width: 40px;
-  }
-
-  .footer-link {
-    text-decoration: none;
-    background: none;
-    border: none;
-    color: $primary-light-green;
-    text-shadow: $button-shadow;
-  }
-
-  .footer-link:hover {
-    color: $secondary-light-green;
-  }
-}
 /* NAVBAR */
 
 .navbar {
@@ -85,32 +56,21 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   padding: 8px 16px;
   box-shadow: $card-shadow;
 
-  .navbar-brand {
-    width: 30%; 
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 20px;
-  }
-
-  .collapse.navbar-collapse {
-    width: 60%;
-  }
-
   .nav-link {
     text-decoration: none;
     color: white;
-    padding: 8px 12px;
 
     &:hover {
-      color: $secondary-light-green; 
+      color: $secondary-light-green;
     }
   }
 
   .main-logo {
     width: 45px;
-    height: auto;}
+    height: auto;
   }
+}
+
 /* FOOTER */
 #footer {
   background-color: $primary-black;
@@ -138,6 +98,5 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
   .footer-link:hover {
     color: $secondary-light-green;
-
   }
 }
