@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 
 import Navbar from "./components/Navbar";
 import Searchbar from "./components/Searchbar";
+import Header from "./components/Header";
 // import MyPlans from './pages/Plantpage'
 // import Calendar from './pages/Calendarpage'
 // import News from './pages/Newspage'
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Searchbar />
+      <Header />
       <Footer />
     </>
   );
