@@ -23,7 +23,7 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
+          data-bs-toggle="offcanvas"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
@@ -32,7 +32,24 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+            className="offcanvas offcanvas-end"
+            tabIndex="-1"
+            id="navbarSupportedContent"
+            aria-labelledby="navbarSupportedContentLabel"
+          >
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="navbarSupportedContentLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                className="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="offcanvas-body">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <motion.a
@@ -117,6 +134,7 @@ const Navbar = () => {
               </motion.a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </nav>
