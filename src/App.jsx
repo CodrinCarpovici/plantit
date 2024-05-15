@@ -21,7 +21,6 @@ function App() {
     <>
       <Navbar />
       <Searchbar />
-      <h1>Hello</h1>
       <Footer />
     </>
   );
