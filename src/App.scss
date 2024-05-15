@@ -35,7 +35,7 @@ $primary-warm: #a8896c;
 $priamry-cold: #39627f;
 
 $secondary-grey: #b4b4b4;
-$secondary-dark-green: #6db193;
+$secondary-dark-green: #50856e;
 $secondary-light-green: #96cf73;
 $secondary-warm: #96cf73;
 $secondary-cold: #6db6ea;
@@ -70,14 +70,103 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     height: auto;
   }
 }
-
 /* OFFCANVAS */
 
 .offcanvas {
   background-color: $primary-black;
   color: white;
 }
+/* MAIN */
 
+/* HEADER */
+.header-container {
+  height: calc(100vh - 104.12px);
+
+  #header {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-title {
+    font-family: $head-font;
+    font-weight: $display-title-fw;
+    font-size: $display-title-sz;
+  }
+
+  .header-subtitle {
+    font-family: $sub-font;
+    font-weight: $subtitle-fw;
+    font-size: $subtitle-sz;
+  }
+
+  .header-title,
+  .header-subtitle {
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-title::before,
+  .header-subtitle::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: $primary-dark-green;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .header-subtitle::before {
+    color: white;
+  }
+
+  .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .header-content {
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+}
+
+//SEARCHBAR
+.searchbar-search {
+  background-color: $primary-dark-green;
+  color: white;
+  border-radius: 0 $r8 $r8 0;
+  transition: border-color 0.2s ease;
+  outline: none;
+  border: 1px solid $primary-dark-green;
+}
+
+.searchbar-input:focus {
+  border-color: $primary-dark-green;
+  box-shadow: 0 0 0 0.2rem rgba(41, 95, 78, 0.5);
+}
+
+.searchbar-search:hover {
+  background-color: $secondary-dark-green;
+  color: white;
+}
+.searchbar-search:active {
+  background-color: $secondary-dark-green !important;
+  color: white !important;
+}
 
 /* FOOTER */
 #footer {
