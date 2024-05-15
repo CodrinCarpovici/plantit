@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="sticky-top navbar navbar-dark bg-dark navbar-expand-lg">
       <div className="container">
         <div className="navbar-brand">
           <a href="/">
@@ -40,7 +40,7 @@ const Navbar = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="navbarSupportedContentLabel">
-                Menu
+                Plant iT
               </h5>
               <button
                 type="button"

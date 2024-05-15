@@ -71,6 +71,14 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   }
 }
 
+/* OFFCANVAS */
+
+.offcanvas {
+  background-color: $primary-black;
+  color: white;
+}
+
+
 /* FOOTER */
 #footer {
   background-color: $primary-black;
@@ -100,6 +108,4 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     color: $secondary-light-green;
   }
 }
-
-
 
