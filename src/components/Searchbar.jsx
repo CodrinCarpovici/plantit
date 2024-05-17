@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Searchbar = () => {
   return (
-    <div className="container mt-3 mb-3">
+    <div className="container mt-3 mb-3 searchbar-container">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="input-group">
