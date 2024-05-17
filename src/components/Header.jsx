@@ -5,7 +5,7 @@ import cactus from "../assets/cactus.jpg";
 
 const Header = () => {
   return (
-    <header className="header-container d-flex flex-column justify-content-center align-items-center text-center">
+    <header className="container header-container d-flex flex-column justify-content-center align-items-center text-center">
       <div id="container-fluid">
         <img src={cactus} alt="cactus" className="header-img" />
         <div className="header-content">
