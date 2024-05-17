@@ -2,10 +2,11 @@ import React from "react";
 import Searchbar from "./Searchbar";
 import Filter from "./Filter";
 import cactus from "../assets/cactus.jpg";
+import DetailCard from "./DetailCard";
 
 const Header = () => {
   return (
-    <header className="header-container d-flex flex-column justify-content-center align-items-center text-center">
+    <header className="container header-container d-flex flex-column justify-content-center align-items-center text-center">
       <div id="container-fluid">
         <img src={cactus} alt="cactus" className="header-img" />
         <div className="header-content">
@@ -13,6 +14,7 @@ const Header = () => {
           <h2 className="header-subtitle" data-text="Make your plant dreams a reality">Make your plant dreams a reality</h2>
           <Searchbar />
           <Filter />
+          <DetailCard />
         </div>
       </div>
     </header>
