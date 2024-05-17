@@ -8,7 +8,7 @@ const DetailCard = () => {
       <a className="plant-card-link" href="/plantpage">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="card-img-container plant-card-img-container"
+          className="card plant-card-img-container"
         >
           <img
             src={housePlants}
@@ -20,8 +20,17 @@ const DetailCard = () => {
               Plant Title
             </h5>
             <p className="card-text plant-card-text small-card">Plant Area</p>
-            <p className="card-text plant-card-text small-card">PLant Type</p>
-            <button className="btn btn-dark">Add to Garden</button>
+            <p className="card-text plant-card-text small-card">Plant Type</p>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                textShadow: "0px 0px 4px gray",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="btn detail-card-btn"
+            >
+              Add to Garden
+            </motion.button>
           </div>
         </motion.div>
       </a>
