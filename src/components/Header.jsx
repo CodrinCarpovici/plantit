@@ -2,6 +2,7 @@ import React from "react";
 import Searchbar from "./Searchbar";
 import Filter from "./Filter";
 import cactus from "../assets/cactus.jpg";
+import DetailCard from "./DetailCard";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
           <h2 className="header-subtitle" data-text="Make your plant dreams a reality">Make your plant dreams a reality</h2>
           <Searchbar />
           <Filter />
+          <DetailCard />
         </div>
       </div>
     </header>
