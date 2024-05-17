@@ -5,7 +5,7 @@ const Searchbar = () => {
   return (
     <div className="container mt-3 mb-3 searchbar-container">
       <div className="row justify-content-center">
-        <div className="col-md-6">
+        <div>
           <div className="input-group">
             <input
               type="text"
