@@ -13,6 +13,7 @@ import Homepage from "./pages/Homepage";
 // import Forum from './pages/Forumpage'
 // import Home from './pages/Homepage'
 // import Contact from './pages/Contactpage'
+import Calendarpage from "./pages/Calendarpage";
 // // import SignIn from './pages/'
 // // import Recognition from './pages/'
 
@@ -22,6 +23,8 @@ function App() {
       <Navbar />
       <Homepage />
       <Footer />
+      <div id="calendar" >
+        <Calendarpage /> </div>
     </>
   );
 }
