@@ -238,6 +238,7 @@ background-color: $secondary-dark-green;
   background-color: $secondary-dark-green !important;
   color: white !important;
 }
+
 // PLANT CARD
 .card-container {
   max-width: 250px;
@@ -329,6 +330,11 @@ background-color: $secondary-dark-green;
   .plant-card {
     max-width: 210px !important;
   }
+}
+
+/* MYPLANTSPAGE */
+#myplants {
+  background-color: $primary-black;
 }
 
 /* FOOTER */
