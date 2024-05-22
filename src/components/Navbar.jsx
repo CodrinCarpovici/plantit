@@ -68,7 +68,7 @@ const Navbar = () => {
                 className="nav-link"
                 href="#myplants"
               >
-                My Plants
+                My Garden
               </motion.a>
             </li>
             <li className="nav-item">
