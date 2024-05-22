@@ -494,3 +494,23 @@ margin: 50px;
   background-color: $secondary-dark-green !important;
   color: white !important;
 }
+
+.add {
+  background-color: $primary-light-green;
+  color: white;
+  border-radius: $r8;
+  transition: border-color 0.2s ease;
+  outline: none;
+  border: 1px solid $primary-light-green;
+  margin-right: 5px;
+}
+
+.add:hover {
+  background-color: lighten($primary-light-green, 10%);
+  color: white;
+}
+
+.add:active {
+  background-color: darken($primary-light-green, 10%) !important;
+  color: white !important;
+}
