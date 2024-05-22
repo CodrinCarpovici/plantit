@@ -12,7 +12,7 @@ const Calendarpage = () => {
         <div className="planner-content">
         <h1 className="planner-title" data-text="Plant-Planner"> Plant Planner </h1>
         <button className="btn add reminder-button mx-2">Add Reminder</button>
-        <button className="btn reminder-button mx-2">Remove Reminder</button>
+        <button className="btn remove reminder-button mx-2">Remove Reminder</button>
         </div>
       </div>
     </div>
