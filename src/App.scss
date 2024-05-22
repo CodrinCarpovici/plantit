@@ -462,3 +462,35 @@ background-color: $secondary-dark-green;
   font-family: $sub-font !important;
   font-size: $lead-text-sz !important;
 }
+
+.planner-title {
+  font-family: $head-font;
+  font-weight: $display-title-fw;
+  font-size: $display-title-sz;
+  color: $primary-dark-green;
+
+}
+.planner-container{
+margin: 50px; 
+}
+
+.reminder-button {
+  background-color: $primary-dark-green;
+  color: white;
+  border-radius: $r8;
+  transition: border-color 0.2s ease;
+  outline: none;
+  border: 1px solid $primary-dark-green;
+  margin-right: 5px; 
+  // width: 100px; 
+}
+
+.reminder-button:hover {
+  background-color: $secondary-dark-green;
+  color: white;
+}
+
+.reminder-button:active {
+  background-color: $secondary-dark-green !important;
+  color: white !important;
+}
