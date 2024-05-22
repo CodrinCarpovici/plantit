@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
+import MyPlantspage from "./pages/Gardenpage";
 // import MyPlans from './pages/Plantpage'
 // import Calendar from './pages/Calendarpage'
 // import News from './pages/Newspage'
@@ -21,6 +22,7 @@ function App() {
     <>
       <Navbar />
       <Homepage />
+      <MyPlantspage />
       <Footer />
     </>
   );

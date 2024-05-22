@@ -6,7 +6,6 @@ const Filter = () => {
   return (
     <div className="container mt-3 mb-3">
       <div className="row justify-content-center">
-        <div className="">
           <div className="filter-container">
             <motion.button
               className="btn filter-icon"
@@ -55,7 +54,6 @@ const Filter = () => {
               </motion.button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
