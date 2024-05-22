@@ -6,8 +6,21 @@ const Calendarpage = () => {
   const [value, setValue] = useState(new Date());
 
   return (
-    <div>
-      <Calendar onChange={setValue} value={value} />
+    <div className="calendar-container">
+      <div className="date-display">
+        <button className="nav-button">{'<'}</button>
+        <div className="date">
+          <span className="day">{value.getDate()}</span>
+          <span className="month-year">{value.toLocaleString('default', { month: 'short' })} - {value.getFullYear()}</span>
+        </div>
+        <button className="nav-button">{'>'}</button>
+      </div>
+      <Calendar 
+        onChange={setValue} 
+        value={value} 
+        className="custom-calendar"
+        tileClassName={({ date }) => date.getDate() === value.getDate() ? 'active' : ''}
+      />
     </div>
   );
 };
