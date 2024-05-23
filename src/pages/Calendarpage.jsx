@@ -5,6 +5,12 @@ import 'react-calendar/dist/Calendar.css';
 const Calendarpage = () => {
   const [value, setValue] = useState(new Date());
 
+  const reminders = [
+    { id: 1, plantName: 'Rose', action: 'Water' },
+    { id: 2, plantName: 'Tulip', action: 'Fertilize' },
+    { id: 3, plantName: 'Cactus', action: 'Prune' },
+  ];
+
   return (
     <>
     <div className="container planner-container d-flex flex-column justify-content-center align-items-center text-center">
@@ -31,6 +37,22 @@ const Calendarpage = () => {
           tileClassName={({ date }) => date.getDate() === value.getDate() ? 'active' : ''}
         />
       </div>
+      <div className="calendar-container mt-5">
+        <div className="row">
+          {reminders.map(reminder => (
+            <div className="col-md-4 mb-4" key={reminder.id}>
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">{reminder.plantName}</h5>
+                  <p className="card-text">Action: {reminder.action}</p>
+                  <button className="btn remove">Mark as Done</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
     </>
   );
 };
