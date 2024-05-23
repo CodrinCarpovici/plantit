@@ -19,12 +19,10 @@ const Calendarpage = () => {
     
       <div className="calendar-container">
         <div className="date-display">
-          <button className="nav-button">{'<'}</button>
           <div className="date">
             <span className="day">{value.getDate()}</span>
             <span className="month-year">{value.toLocaleString('default', { month: 'short' })} - {value.getFullYear()}</span>
           </div>
-          <button className="nav-button">{'>'}</button>
         </div>
         <Calendar 
           onChange={setValue} 

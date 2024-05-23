@@ -377,44 +377,28 @@ background-color: $secondary-dark-green;
   align-items: center;
   background-color: $primary-dark-green;
   color: white;
-  border-radius:  $r8 0 0 $r8 ;
+  border-radius: $r8 0 0 $r8;
   width: 20%; 
   position: relative;
-}
 
-.date-display .date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.date-display .day {
-  font-size: $display-title-sz;
-  font-weight: $display-title-fw;
-}
+  .day {
+    font-size: $display-title-sz;
+    font-weight: $display-title-fw;
+  }
 
-.date-display .month-year {
-  font-size: $lead-text-sz;
-}
+  .month-year {
+    font-size: $lead-text-sz;
+  }
 
-// .nav-button {
-//   background: none;
-//   border: none;
-//   color: white;
-//   font-size: 24px;
-//   cursor: pointer;
-//   position: absolute;
-//   top: 40%; 
-// }
-
-.nav-button:first-of-type {
-  left: 15px; 
-  display: none;
-}
-
-.nav-button:last-of-type {
-  right: 15px;
-  display: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .custom-calendar {
@@ -446,9 +430,6 @@ background-color: $secondary-dark-green;
   border-radius: 50%;
 }
 
-// .react-calendar__tile--now {
-//   background: none;
-// }
 
 .react-calendar__tile--now {
   background: $priamry-cold!important;
