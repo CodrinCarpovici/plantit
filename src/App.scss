@@ -354,3 +354,147 @@ $img-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     color: $secondary-light-green;
   }
 }
+
+
+/* Calendarpage */
+.calendar-container {
+  display: flex;
+  justify-content: center; 
+  width: 80%; 
+  margin: 0 auto; 
+  font-family: $sub-font;
+}
+
+.date-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-dark-green;
+  color: white;
+  border-radius: $r8 0 0 $r8;
+  width: 20%; 
+  position: relative;
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .day {
+    font-size: $display-title-sz;
+    font-weight: $display-title-fw;
+  }
+
+  .month-year {
+    font-size: $lead-text-sz;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.custom-calendar {
+  width: 80%;
+  border-radius: 0 $r8  $r8 0 ;
+
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: $primary-light-green !important;
+  color: white !important;
+  font-weight: $subtitle-fw;
+}
+
+.react-calendar {
+  border: none !important;
+  width: 100%; 
+  box-shadow: $img-shadow;
+}
+
+.react-calendar__navigation {
+  display: none; }
+
+.react-calendar__month-view__weekdays {
+  font-weight: bold;
+}
+
+.react-calendar__tile {
+  border-radius: 50%;
+}
+
+
+.react-calendar__tile--now {
+  background: $priamry-cold!important;
+  color: white;
+}
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+  font-family: $sub-font;
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month abbr {
+  font-family: $sub-font !important;
+  font-size: $paragraph-text-sz;
+}
+
+
+.custom-calendar .react-calendar__navigation {
+  font-family: $sub-font !important;
+  font-size: $lead-text-sz !important;
+}
+
+.planner-title {
+  font-family: $head-font;
+  font-weight: $display-title-fw;
+  font-size: $display-title-sz;
+  color: $primary-dark-green;
+
+}
+.planner-container{
+margin: 50px; 
+}
+
+.remove{
+  background-color: $priamry-cold;
+  color: white;
+  border-radius: $r8;
+  transition: border-color 0.2s ease;
+  outline: none;
+  border: 1px solid $priamry-cold;
+  margin-right: 5px; 
+  // width: 100px; 
+}
+
+.remove:hover {
+  background-color: $secondary-cold;
+  color: white;
+}
+
+.remove:active {
+  background-color: $secondary-dark-green !important;
+  color: white !important;
+}
+
+.add {
+  background-color: $primary-light-green;
+  color: white;
+  border-radius: $r8;
+  transition: border-color 0.2s ease;
+  outline: none;
+  border: 1px solid $primary-light-green;
+  margin-right: 5px;
+}
+
+.add:hover {
+  background-color: lighten($primary-light-green, 10%);
+  color: white;
+}
+
+.add:active {
+  background-color: darken($primary-light-green, 10%) !important;
+  color: white !important;
+}
+
