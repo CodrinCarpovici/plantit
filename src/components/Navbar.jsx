@@ -66,9 +66,9 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="nav-link"
-                href="/myplans"
+                href="#myplants"
               >
-                My Plans
+                My Garden
               </motion.a>
             </li>
             <li className="nav-item">
